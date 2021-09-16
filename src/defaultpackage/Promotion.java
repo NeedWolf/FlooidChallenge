@@ -1,14 +1,16 @@
+package defaultpackage;
+
 public class Promotion {
-    enum DiscountType {
+    public static enum DiscountType {
         FLAT,
         FREE_ITEM
     }
     private int minimumAmount;
     private DiscountType discountType;
-    private int discount;
+    private double discount;
     private Item item;
 
-    public Promotion(int minimumAmount, DiscountType discountType, int discount, Item item) {
+    public Promotion(int minimumAmount, DiscountType discountType, double discount, Item item) {
         this.minimumAmount = minimumAmount;
         this.discountType = discountType;
         this.discount = discount;
